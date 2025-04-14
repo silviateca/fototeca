@@ -1,68 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Fotos</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería</title>
+  <style>
+    /* Estilos para la cuadrícula */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Galería de Fotos</h1>
-    </header>
-    <main id="gallery">
-        <article class="thumb">
-            <a href="images/fulls/07.jpg" class="image">
-                <img src="images/thumbs/07.jpg" alt="Imagen 7">
-            </a>
-            <h2>Mauris id tellus arcu</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/08.jpg" class="image">
-                <img src="images/thumbs/08.jpg" alt="Imagen 8">
-            </a>
-            <h2>Nunc vehicula id nulla</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/09.jpg" class="image">
-                <img src="images/thumbs/09.jpg" alt="Imagen 9">
-            </a>
-            <h2>Neque et faucibus viverra</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <!-- Agrega más artículos aquí -->
-    </main>
+  <h1>Galería de Imágenes</h1>
+  <div class="gallery">
+    <img src="images/fulls/c/Cañadas (100).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (102).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (103).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (104).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (105).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (108).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (114).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (115).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (118).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (119).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (120).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (124).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (125).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (13).jpg" alt="Cañadas 100">
+    <img src="images/fulls/c/Cañadas (130).jpg" alt="Cañadas 100">
+    <!-- Agrega más imágenes aquí -->
+  </div>
 </body>
 </html>
-Puntos importantes:
-Miniaturas (thumbs) y versiones completas (fulls):
-
-Cada <article> contiene una miniatura (thumb) que enlaza a la versión completa de la imagen (full).
-Por ejemplo:
-Miniatura: images/thumbs/07.jpg
-Imagen completa: images/fulls/07.jpg
-Encabezado:
-
-La <header> proporciona un título claro para la página, en este caso: "Galería de Fotos".
-Estilo CSS:
-
-Si ya tienes un archivo CSS como assets/css/main.css, asegúrate de que incluya estilos para .thumb y .image. Si no, aquí tienes un ejemplo básico:
-CSS
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-.thumb img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-.thumb img:hover {
-    transform: scale(1.05);
-}
