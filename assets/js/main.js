@@ -220,7 +220,7 @@
 					if ($image.length == 0)
 						return;
 
-				// Image.
+				// 
 				// This sets the background of the "image" <span> to the image pointed to by its child
 				// <img> (which is then hidden). Gives us way more flexibility.
 
