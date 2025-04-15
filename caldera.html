@@ -1,127 +1,148 @@
+<!DOCTYPE html>
 <html lang="es">
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caldera</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <title>Imágenes de Caldera</title>
   <style>
-    #main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-      gap: 0px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    #main img {
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    #gallery img {
       width: 100%;
-      height: auto-fit;
-      display: block;
-      border: 2px solid black;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    #gallery img:hover {
+      transform: scale(1.05);
+      border-color: #666;
     }
   </style>
 </head>
-<body class="is-preload">
-  <div class="main">
-      <article><a href="images/fulls/caldera/caldera (1).jpg" class="image"><img src="images/fulls/caldera/caldera (1).jpg" alt="Riendas 1" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (11).jpg" class="image"><img src="images/fulls/caldera/caldera (11).jpg" alt="Caldera 11" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (12).jpg" class="image"><img src="images/fulls/caldera/caldera (12).jpg" alt="Caldera 12" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (13).jpg" class="image"><img src="images/fulls/caldera/caldera (13).jpg" alt="Caldera 13" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (14).jpg" class="image"><img src="images/fulls/caldera/caldera (14).jpg" alt="Caldera 14" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (15).jpg" class="image"><img src="images/fulls/caldera/caldera (15).jpg" alt="Caldera 15" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (16).jpg" class="image"><img src="images/fulls/caldera/caldera (16).jpg" alt="Caldera 16" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (17).jpg" class="image"><img src="images/fulls/caldera/caldera (17).jpg" alt="Caldera 17" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (18).jpg" class="image"><img src="images/fulls/caldera/caldera (18).jpg" alt="Caldera 18" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (19).jpg" class="image"><img src="images/fulls/caldera/caldera (19).jpg" alt="Caldera 19" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (2).jpg" class="image"><img src="images/fulls/caldera/caldera (2).jpg" alt="Caldera 2" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (20).jpg" class="image"><img src="images/fulls/caldera/caldera (20).jpg" alt="Caldera 20" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (21).jpg" class="image"><img src="images/fulls/caldera/caldera (21).jpg" alt="Caldera 21" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (22).jpg" class="image"><img src="images/fulls/caldera/caldera (22).jpg" alt="Caldera 22" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (23).jpg" class="image"><img src="images/fulls/caldera/caldera (23).jpg" alt="Caldera 23" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (24).jpg" class="image"><img src="images/fulls/caldera/caldera (24).jpg" alt="Caldera 24" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (25).jpg" class="image"><img src="images/fulls/caldera/caldera (25).jpg" alt="Caldera 25" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (26).jpg" class="image"><img src="images/fulls/caldera/caldera (26).jpg" alt="Caldera 26" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (27).jpg" class="image"><img src="images/fulls/caldera/caldera (27).jpg" alt="Caldera 27" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (28).jpg" class="image"><img src="images/fulls/caldera/caldera (28).jpg" alt="Caldera 28" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (29).jpg" class="image"><img src="images/fulls/caldera/caldera (29).jpg" alt="Caldera 29" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (3).jpg" class="image"><img src="images/fulls/caldera/caldera (3).jpg" alt="Caldera 3" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (30).jpg" class="image"><img src="images/fulls/caldera/caldera (30).jpg" alt="Caldera 30" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (31).jpg" class="image"><img src="images/fulls/caldera/caldera (31).jpg" alt="Caldera 31" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (32).jpg" class="image"><img src="images/fulls/caldera/caldera (32).jpg" alt="Caldera 32" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (33).jpg" class="image"><img src="images/fulls/caldera/caldera (33).jpg" alt="Caldera 33" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (34).jpg" class="image"><img src="images/fulls/caldera/caldera (34).jpg" alt="Caldera 34" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (35).jpg" class="image"><img src="images/fulls/caldera/caldera (35).jpg" alt="Caldera 35" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (36).jpg" class="image"><img src="images/fulls/caldera/caldera (36).jpg" alt="Caldera 36" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (37).jpg" class="image"><img src="images/fulls/caldera/caldera (37).jpg" alt="Caldera 37" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (38).jpg" class="image"><img src="images/fulls/caldera/caldera (38).jpg" alt="Caldera 38" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (39).jpg" class="image"><img src="images/fulls/caldera/caldera (39).jpg" alt="Caldera 39" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (4).jpg" class="image"><img src="images/fulls/caldera/caldera (4).jpg" alt="Caldera 4" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (40).jpg" class="image"><img src="images/fulls/caldera/caldera (40).jpg" alt="Caldera 40" /></a></article>
-      <article><a href="images/fulls/caldera/caldera (41).jpg" class="image"><img src="images/fulls/caldera/caldera (41).jpg" alt="Caldera 41" /></a></article>
-<article><a href="images/fulls/caldera/caldera (42).jpg" class="image"><img src="images/fulls/caldera/caldera (42).jpg" alt="Caldera 42" /></a></article>
-<article><a href="images/fulls/caldera/caldera (43).jpg" class="image"><img src="images/fulls/caldera/caldera (43).jpg" alt="Caldera 43" /></a></article>
-<article><a href="images/fulls/caldera/caldera (44).jpg" class="image"><img src="images/fulls/caldera/caldera (44).jpg" alt="Caldera 44" /></a></article>
-<article><a href="images/fulls/caldera/caldera (45).jpg" class="image"><img src="images/fulls/caldera/caldera (45).jpg" alt="Caldera 45" /></a></article>
-<article><a href="images/fulls/caldera/caldera (46).jpg" class="image"><img src="images/fulls/caldera/caldera (46).jpg" alt="Caldera 46" /></a></article>
-<article><a href="images/fulls/caldera/caldera (47).jpg" class="image"><img src="images/fulls/caldera/caldera (47).jpg" alt="Caldera 47" /></a></article>
-<article><a href="images/fulls/caldera/caldera (48).jpg" class="image"><img src="images/fulls/caldera/caldera (48).jpg" alt="Caldera 48" /></a></article>
-<article><a href="images/fulls/caldera/caldera (49).jpg" class="image"><img src="images/fulls/caldera/caldera (49).jpg" alt="Caldera 49" /></a></article>
-<article><a href="images/fulls/caldera/caldera (50).jpg" class="image"><img src="images/fulls/caldera/caldera (50).jpg" alt="Caldera 50" /></a></article>
-<article><a href="images/fulls/caldera/caldera (51).jpg" class="image"><img src="images/fulls/caldera/caldera (51).jpg" alt="Caldera 51" /></a></article>
-<article><a href="images/fulls/caldera/caldera (52).jpg" class="image"><img src="images/fulls/caldera/caldera (52).jpg" alt="Caldera 52" /></a></article>
-<article><a href="images/fulls/caldera/caldera (53).jpg" class="image"><img src="images/fulls/caldera/caldera (53).jpg" alt="Caldera 53" /></a></article>
-<article><a href="images/fulls/caldera/caldera (54).jpg" class="image"><img src="images/fulls/caldera/caldera (54).jpg" alt="Caldera 54" /></a></article>
-<article><a href="images/fulls/caldera/caldera (55).jpg" class="image"><img src="images/fulls/caldera/caldera (55).jpg" alt="Caldera 55" /></a></article>
-<article><a href="images/fulls/caldera/caldera (56).jpg" class="image"><img src="images/fulls/caldera/caldera (56).jpg" alt="Caldera 56" /></a></article>
-<article><a href="images/fulls/caldera/caldera (57).jpg" class="image"><img src="images/fulls/caldera/caldera (57).jpg" alt="Caldera 57" /></a></article>
-<article><a href="images/fulls/caldera/caldera (58).jpg" class="image"><img src="images/fulls/caldera/caldera (58).jpg" alt="Caldera 58" /></a></article>
-<article><a href="images/fulls/caldera/caldera (59).jpg" class="image"><img src="images/fulls/caldera/caldera (59).jpg" alt="Caldera 59" /></a></article>
-<article><a href="images/fulls/caldera/caldera (60).jpg" class="image"><img src="images/fulls/caldera/caldera (60).jpg" alt="Caldera 60" /></a></article>
-<article><a href="images/fulls/caldera/caldera (61).jpg" class="image"><img src="images/fulls/caldera/caldera (61).jpg" alt="Caldera 61" /></a></article>
-<article><a href="images/fulls/caldera/caldera (62).jpg" class="image"><img src="images/fulls/caldera/caldera (62).jpg" alt="Caldera 62" /></a></article>
-<article><a href="images/fulls/caldera/caldera (63).jpg" class="image"><img src="images/fulls/caldera/caldera (63).jpg" alt="Caldera 63" /></a></article>
-<article><a href="images/fulls/caldera/caldera (64).jpg" class="image"><img src="images/fulls/caldera/caldera (64).jpg" alt="Caldera 64" /></a></article>
-<article><a href="images/fulls/caldera/caldera (65).jpg" class="image"><img src="images/fulls/caldera/caldera (65).jpg" alt="Caldera 65" /></a></article>
-<article><a href="images/fulls/caldera/caldera (66).jpg" class="image"><img src="images/fulls/caldera/caldera (66).jpg" alt="Caldera 66" /></a></article>
-<article><a href="images/fulls/caldera/caldera (67).jpg" class="image"><img src="images/fulls/caldera/caldera (67).jpg" alt="Caldera 67" /></a></article>
-<article><a href="images/fulls/caldera/caldera (68).jpg" class="image"><img src="images/fulls/caldera/caldera (68).jpg" alt="Caldera 68" /></a></article>
-<article><a href="images/fulls/caldera/caldera (69).jpg" class="image"><img src="images/fulls/caldera/caldera (69).jpg" alt="Caldera 69" /></a></article>
-<article><a href="images/fulls/caldera/caldera (70).jpg" class="image"><img src="images/fulls/caldera/caldera (70).jpg" alt="Caldera 70" /></a></article>
-<article><a href="images/fulls/caldera/caldera (71).jpg" class="image"><img src="images/fulls/caldera/caldera (71).jpg" alt="Caldera 71" /></a></article>
-<article><a href="images/fulls/caldera/caldera (72).jpg" class="image"><img src="images/fulls/caldera/caldera (72).jpg" alt="Caldera 72" /></a></article>
-<article><a href="images/fulls/caldera/caldera (73).jpg" class="image"><img src="images/fulls/caldera/caldera (73).jpg" alt="Caldera 73" /></a></article>
-<article><a href="images/fulls/caldera/caldera (74).jpg" class="image"><img src="images/fulls/caldera/caldera (74).jpg" alt="Caldera 74" /></a></article>
-<article><a href="images/fulls/caldera/caldera (75).jpg" class="image"><img src="images/fulls/caldera/caldera (75).jpg" alt="Caldera 75" /></a></article>
-<article><a href="images/fulls/caldera/caldera (76).jpg" class="image"><img src="images/fulls/caldera/caldera (76).jpg" alt="Caldera 76" /></a></article>
-<article><a href="images/fulls/caldera/caldera (77).jpg" class="image"><img src="images/fulls/caldera/caldera (77).jpg" alt="Caldera 77" /></a></article>
-<article><a href="images/fulls/caldera/caldera (78).jpg" class="image"><img src="images/fulls/caldera/caldera (78).jpg" alt="Caldera 78" /></a></article>
-<article><a href="images/fulls/caldera/caldera (79).jpg" class="image"><img src="images/fulls/caldera/caldera (79).jpg" alt="Caldera 79" /></a></article>
-<article><a href="images/fulls/caldera/caldera (80).jpg" class="image"><img src="images/fulls/caldera/caldera (80).jpg" alt="Caldera 80" /></a></article>
-<article><a href="images/fulls/caldera/caldera (81).jpg" class="image"><img src="images/fulls/caldera/caldera (81).jpg" alt="Caldera 81" /></a></article>
-<article><a href="images/fulls/caldera/caldera (82).jpg" class="image"><img src="images/fulls/caldera/caldera (82).jpg" alt="Caldera 82" /></a></article>
-<article><a href="images/fulls/caldera/caldera (83).jpg" class="image"><img src="images/fulls/caldera/caldera (83).jpg" alt="Caldera 83" /></a></article>
-<article><a href="images/fulls/caldera/caldera (84).jpg" class="image"><img src="images/fulls/caldera/caldera (84).jpg" alt="Caldera 84" /></a></article>
-<article><a href="images/fulls/caldera/caldera (85).jpg" class="image"><img src="images/fulls/caldera/caldera (85).jpg" alt="Caldera 85" /></a></article>
-<article><a href="images/fulls/caldera/caldera (86).jpg" class="image"><img src="images/fulls/caldera/caldera (86).jpg" alt="Caldera 86" /></a></article>
-<article><a href="images/fulls/caldera/caldera (87).jpg" class="image"><img src="images/fulls/caldera/caldera (87).jpg" alt="Caldera 87" /></a></article>
-<article><a href="images/fulls/caldera/caldera (88).jpg" class="image"><img src="images/fulls/caldera/caldera (88).jpg" alt="Caldera 88" /></a></article>
-<article><a href="images/fulls/caldera/caldera (89).jpg" class="image"><img src="images/fulls/caldera/caldera (89).jpg" alt="Caldera 89" /></a></article>
-<article><a href="images/fulls/caldera/caldera (90).jpg" class="image"><img src="images/fulls/caldera/caldera (90).jpg" alt="Caldera 90" /></a></article>
-<article><a href="images/fulls/caldera/caldera (91).jpg" class="image"><img src="images/fulls/caldera/caldera (91).jpg" alt="Caldera 91" /></a></article>
-<article><a href="images/fulls/caldera/caldera (92).jpg" class="image"><img src="images/fulls/caldera/caldera (92).jpg" alt="Caldera 92" /></a></article>
-<article><a href="images/fulls/caldera/caldera (93).png" class="image"><img src="images/fulls/caldera/caldera (93).png" alt="Caldera 93" /></a></article>
-<article><a href="images/fulls/caldera/caldera (94).png" class="image"><img src="images/fulls/caldera/caldera (94).png" alt="Caldera 94" /></a></article>
-<article><a href="images/fulls/caldera/caldera (95).png" class="image"><img src="images/fulls/caldera/caldera (95).png" alt="Caldera 95" /></a></article>
-<article><a href="images/fulls/caldera/caldera (96).png" class="image"><img src="images/fulls/caldera/caldera (96).png" alt="Caldera 96" /></a></article>
-<article><a href="images/fulls/caldera/caldera (97).png" class="image"><img src="images/fulls/caldera/caldera (97).png" alt="Caldera 97" /></a></article>
-  
+<body>
+  <h1>Galería de Imágenes de Caldera</h1>
+  <div id="gallery">
+    <!-- Lista de imágenes -->
+    <img src="images/fulls/caldera/caldera (1).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (2).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (3).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (4).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (5).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (6).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (7).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (8).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (9).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (10).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (11).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (12).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (13).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (14).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (15).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (16).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (17).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (18).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (19).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (20).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (21).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (22).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (23).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (24).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (25).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (26).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (27).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (28).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (29).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (30).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (31).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (32).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (33).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (34).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (35).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (36).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (37).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (38).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (39).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (40).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (41).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (42).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (43).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (44).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (45).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (46).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (47).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (48).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (49).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (50).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (51).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (52).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (53).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (54).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (55).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (56).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (57).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (58).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (59).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (60).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (61).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (62).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (63).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (64).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (65).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (66).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (67).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (68).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (69).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (70).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (71).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (72).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (73).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (74).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (75).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (76).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (77).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (78).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (79).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (80).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (81).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (82).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (83).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (84).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (85).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (86).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (87).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (88).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (89).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (90).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (91).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (92).jpg" alt="">
+    <img src="images/fulls/caldera/caldera (93).png" alt="">
+    <img src="images/fulls/caldera/caldera (94).png" alt="">
+    <img src="images/fulls/caldera/caldera (95).png" alt="">
+    <img src="images/fulls/caldera/caldera (96).png" alt="">
+    <img src="images/fulls/caldera/caldera (97).png" alt="">
   </div>
-  
-<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
