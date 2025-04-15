@@ -6,12 +6,12 @@
   <title>Riendas sueltas</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    .gallery {
+    #main {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       gap: 0px;
     }
-    .gallery img {
+    #main img {
       width: 100%;
       height: auto-fit;
       display: block;
@@ -21,7 +21,7 @@
 </head>
 
 <body class="is-preload">
-  <div class="gallery">
+  <div class="main">
     <article><a href="images/fulls/riendas/riendas (1).jpg" class="image"><img src="images/fulls/riendas/riendas (1).jpg" alt="Riendas 1" /></a></article>
 <article><a href="images/fulls/riendas/riendas (2).jpg" class="image"><img src="images/fulls/riendas/riendas (2).jpg" alt="Riendas 2" /></a></article>
 <article><a href="images/fulls/riendas/riendas (3).jpg" class="image"><img src="images/fulls/riendas/riendas (3).jpg" alt="Riendas 3" /></a></article>
@@ -79,30 +79,13 @@
   <!-- Agrega más imágenes aquí -->
   
   </div>
-  <!-- Scripts necesarios -->
+  
   <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script>
-      window.addEventListener('load', function () {
-        // Configuración de poptrox para mostrar las imágenes en un popup con navegación
-        $('.gallery').poptrox({
-          usePopupCaption: false,  // Deshabilitar las leyendas emergentes
-          usePopupNav: true,       // Activar la navegación (prev / next)
-          popupCloserText: 'Cerrar', // Texto del botón de cerrar
-          overlayOpacity: 0.75,    // Opacidad del overlay de fondo
-          popupSpeed: 300,         // Velocidad de animación del popup
-          popupTransition: 'fade', // Tipo de transición (fade para un efecto de desvanecimiento)
-          windowMargin: 50         // Márgenes para la imagen en el popup
-        });
-      });
-    </script>
-    
-    			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-    
-  </body>
+
+	</body>
 </html>
