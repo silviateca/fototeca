@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="es">
   
 <head>
@@ -6,12 +8,12 @@
   <title>Caldera</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    .gallery {
+    .caldera {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       gap: 0px;
     }
-    .gallery img {
+    .caldera img {
       width: 100%;
       height: auto-fit;
       display: block;
@@ -21,7 +23,7 @@
 </head>
 
 <body class="is-preload">
-  <div class="gallery">
+  <div class="caldera">
     <a href="images/fulls/caldera/caldera (1).jpg"><img src="images/fulls/caldera/caldera (1).jpg" alt=""></a>
     <a href="images/fulls/caldera/caldera (10).jpg"><img src="images/fulls/caldera/caldera (10).jpg" alt=""></a>
     <a href="images/fulls/caldera/caldera (11).jpg"><img src="images/fulls/caldera/caldera (11).jpg" alt=""></a>
@@ -119,33 +121,23 @@
     <a href="images/fulls/caldera/caldera (95).png"><img src="images/fulls/caldera/caldera (95).png" alt=""></a>
     <a href="images/fulls/caldera/caldera (96).png"><img src="images/fulls/caldera/caldera (96).png" alt=""></a>
     <a href="images/fulls/caldera/caldera (97).png"><img src="images/fulls/caldera/caldera (97).png" alt=""></a>
-  <!-- Agrega más imágenes aquí -->
-  
   </div>
+  
   <!-- Scripts necesarios -->
   <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script>
-      window.addEventListener('load', function () {
-        // Configuración de poptrox para mostrar las imágenes en un popup con navegación
-        $('.gallery').poptrox({
-          usePopupCaption: false,  // Deshabilitar las leyendas emergentes
-          usePopupNav: true,       // Activar la navegación (prev / next)
-          popupCloserText: 'Cerrar', // Texto del botón de cerrar
-          overlayOpacity: 0.75,    // Opacidad del overlay de fondo
-          popupSpeed: 300,         // Velocidad de animación del popup
-          popupTransition: 'fade', // Tipo de transición (fade para un efecto de desvanecimiento)
-          windowMargin: 50         // Márgenes para la imagen en el popup
-        });
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.caldera').poptrox({
+        usePopupCaption: false,  // Deshabilitar leyendas emergentes
+        usePopupNav: true,       // Activar navegación (prev / next)
+        popupCloserText: 'Cerrar', // Texto del botón de cerrar
+        overlayOpacity: 0.75,    // Opacidad del overlay de fondo
+        popupSpeed: 300,         // Velocidad de animación
+        popupTransition: 'fade', // Tipo de transición (fade para un efecto de desvanecimiento)
+        windowMargin: 50         // Márgenes para la imagen en el popup
       });
-    </script>
-    
-    			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-    
-  </body>
+    });
+  </script>
+</body>
 </html>
