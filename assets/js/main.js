@@ -259,7 +259,7 @@
 				popupLoaderText: '',
 				popupSpeed: 300,
 				popupWidth: 150,
-				selector: '#main a',
+				selector: '.thumb > a.image',
 				usePopupCaption: true,
 				usePopupCloser: true,
 				usePopupDefaultStyling: false,
