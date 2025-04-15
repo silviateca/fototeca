@@ -1,27 +1,28 @@
+<!DOCTYPE html>
+
 <html lang="es">
   
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casa</title>
+  <title>Caldera</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    .gallery {
+    #main {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       gap: 0px;
     }
-    .gallery img {
+    #main img {
       width: 100%;
       height: auto-fit;
       display: block;
       border: 2px solid black;
     }
-  </style>
+</style>
 </head>
-
 <body class="is-preload">
-  <div class="gallery">
+  <div class="main">
     <a href="images/fulls/casa/casa (1).JPG"><img src="images/fulls/casa/casa (1).JPG" alt=""></a>
     <a href="images/fulls/casa/casa (10).JPG"><img src="images/fulls/casa/casa (10).JPG" alt=""></a>
     <a href="images/fulls/casa/casa (11).JPG"><img src="images/fulls/casa/casa (11).JPG" alt=""></a>
@@ -46,30 +47,13 @@
   <!-- Agrega más imágenes aquí -->
   
   </div>
-  <!-- Scripts necesarios -->
+  
   <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script>
-      window.addEventListener('load', function () {
-        // Configuración de poptrox para mostrar las imágenes en un popup con navegación
-        $('.gallery').poptrox({
-          usePopupCaption: false,  // Deshabilitar las leyendas emergentes
-          usePopupNav: true,       // Activar la navegación (prev / next)
-          popupCloserText: 'Cerrar', // Texto del botón de cerrar
-          overlayOpacity: 0.75,    // Opacidad del overlay de fondo
-          popupSpeed: 300,         // Velocidad de animación del popup
-          popupTransition: 'fade', // Tipo de transición (fade para un efecto de desvanecimiento)
-          windowMargin: 50         // Márgenes para la imagen en el popup
-        });
-      });
-    </script>
-    
-    			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-    
-  </body>
+
+	</body>
 </html>
