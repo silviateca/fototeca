@@ -1,127 +1,75 @@
-<!DOCTYPE HTML>
+<html lang="es">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 0px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto-fit;
+      display: block;
+      border: 2px solid black;
+    }
+  </style>
+</head>
 
-    <html lang="es">
-    	<head>
-    		<meta charset="utf-8" />
-    		<title>Galería: Casa</title>
-    		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    		<link rel="stylesheet" href="assets/css/main.css" />
-    		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    	</head>
-    	<body class="is-preload">
-
-<!-- Wrapper -->
-
-	  <div id="wrapper">
-		
-<!-- Portada -->
-
-    <section id="hero" style="text-align: center; padding: 100px 20px; background: white; color: black;">
-        <h1 style="font-size: 3em; margin-bottom: 20px; color: black;">Primer día con la cámara Nikon prestada</h1>
-        <p style="font-size: 1.5em; margin-bottom: 40px;">Acompáñame</p>
-        <a href="#main" style="text-decoration: none; padding: 10px 20px; background: #f56a6a; color: #fff; font-size: 1.2em; border-radius: 5px;">Explorar</a>
-    </section>
-
-<!-- Header -->
-
-		<header id="header">
-		    <h1><a href="index.html"><strong>La vida en imágenes</strong> by Silvia</a></h1>
-		  	<nav>
-		  	<ul>
-		  	<li><a href="#footer" class="icon solid fa-info-circle">Contacto</a></li>
-		  	</ul>
-		  	</nav>
-		</header>
-
-<!-- Main -->
-
-		<div id="main">
-    <article class="thumb">
-            <a href="images/fulls/c/caldera (8).jpg" class="image"><img src="images/thumbs/caldera.jpg" alt="Simbiosis maravillosa" /></a>
-            <h2>14 de abril 2025</h2>
-            <p>De paseo por la Caldera</p>
-		</article>
-
-    <article class="thumb">
-            <a href="images/fulls/riendas/riendas (30).jpg" class="image"><img src="images/thumbs/riendas.jpg" alt="Simbiosis maravillosa"/></a>
-            <h2>5 de abril 2025</h2>
-            <p>Centro hípico las Riendas</p>
-            <a href="riendas.html" class="button">Click para más</a> <!-- Enlace a la galería -->
-		</article>
-		
-		<article class="thumb">
-            <a href="images/fulls/casa/casa (18).JPG" class="image"><img src="images/thumbs/casa.JPG" alt="Simbiosis maravillosa"/></a>
-            <h2>22 de marzo 2025</h2>
-            <p>Casa</p>
-            <a href="casa.html" class="button">Click para más</a> <!-- Enlace a la galería -->
-		</article>
-		
-				<article class="thumb">
-            <a href="images/fulls/pulpito/pulpito (22).JPG" class="image"><img src="images/thumbs/pulpito.JPG" alt="Simbiosis maravillosa"/></a>
-            <h2>29 de marzo 2025</h2>
-            <p>Casa</p>
-            <a href="pulpito.html" class="button">Click para más</a> <!-- Enlace a la galería -->
-		</article>
-		
-		</div>
-
-<!-- Footer -->
-					<footer id="footer" class="panel">
-						<div class="inner split">
-							<div>
-								<section>
-									<h2>Magna feugiat sed adipiscing</h2>
-									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-								</section>
-								<section>
-									<h2>Follow me on ...</h2>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									</ul>
-								</section>
-								<p class="copyright">
-									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-								</p>
-							</div>
-							<div>
-								<section>
-									<h2>Get in touch</h2>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<input type="text" name="name" id="name" placeholder="Name" />
-											</div>
-											<div class="field half">
-												<input type="text" name="email" id="email" placeholder="Email" />
-											</div>
-											<div class="field">
-												<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-							</div>
-						</div>
-					</footer>
-
-			</div>
-
-<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+<body class="is-preload">
+  <div class="gallery">
+    <a href=images/fulls/casa/casa (1).JPG"><img src="images/fulls/casa/casa (1).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (10).JPG"><img src="images/fulls/casa/casa (10).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (11).JPG"><img src="images/fulls/casa/casa (11).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (12).JPG"><img src="images/fulls/casa/casa (12).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (13).JPG"><img src="images/fulls/casa/casa (13).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (14).JPG"><img src="images/fulls/casa/casa (14).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (15).JPG"><img src="images/fulls/casa/casa (15).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (16).JPG"><img src="images/fulls/casa/casa (16).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (17).JPG"><img src="images/fulls/casa/casa (17).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (18).JPG"><img src="images/fulls/casa/casa (18).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (19).JPG"><img src="images/fulls/casa/casa (19).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (2).JPG"><img src="images/fulls/casa/casa (2).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (20).JPG"><img src="images/fulls/casa/casa (20).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (3).JPG"><img src="images/fulls/casa/casa (3).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (4).JPG"><img src="images/fulls/casa/casa (4).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (5).JPG"><img src="images/fulls/casa/casa (5).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (6).JPG"><img src="images/fulls/casa/casa (6).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (7).JPG"><img src="images/fulls/casa/casa (7).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (8).JPG"><img src="images/fulls/casa/casa (8).JPG" alt=""></a>
+    <a href=images/fulls/casa/casa (9).JPG"><img src="images/fulls/casa/casa (9).JPG" alt=""></a>
+    
+  <!-- Agrega más imágenes aquí -->
+  
+  </div>
+  <!-- Scripts necesarios -->
+  <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        // Configuración de poptrox para mostrar las imágenes en un popup con navegación
+        $('.gallery').poptrox({
+          usePopupCaption: false,  // Deshabilitar las leyendas emergentes
+          usePopupNav: true,       // Activar la navegación (prev / next)
+          popupCloserText: 'Cerrar', // Texto del botón de cerrar
+          overlayOpacity: 0.75,    // Opacidad del overlay de fondo
+          popupSpeed: 300,         // Velocidad de animación del popup
+          popupTransition: 'fade', // Tipo de transición (fade para un efecto de desvanecimiento)
+          windowMargin: 50         // Márgenes para la imagen en el popup
+        });
+      });
+    </script>
+    
+    			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-	</body>
+    
+  </body>
 </html>
