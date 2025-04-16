@@ -5,14 +5,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 5px;
+            padding: 10px;
+            background-color: white; /* Cambia a black si prefieres fondo negro */
+        }
+    
+        #gallery img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body class="is-preload">
     <div id="wrapper">
         <!-- Sección de encabezado específica para Caldera -->
         <section id="hero" style="text-align: center; padding: 100px 20px; background: white; color: black;">
             <h1 style="font-size: 3em; margin-bottom: 20px;">Página de Caldera</h1>
-            <p style="font-size: 1.5em; margin-bottom: 40px;">Contenido relacionado con Caldera</p>
-            <a href="#gallery" style="text-decoration: none; padding: 10px 20px; background: #f56a6a; color: #fff; font-size: 1.2em; border-radius: 5px;">Explorar la galería</a>
+            <p style="font-size: 1.5em; margin-bottom: 40px;">Galería de imágenes de la Caldera</p>
+            <a href="#gallery" style="text-decoration: none; padding: 10px 20px; background: #f56a6a; color: #fff; font-size: 1.2em; border-radius: 5px;">!Qué disfrutes!</a>
         </section>
 
         <!-- Galería de imágenes -->
