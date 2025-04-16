@@ -1,54 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>caldera</title>
-  <link rel="stylesheet" href="assets/css/main.css" /> <!--desde donde se carga el icono del pie de pagina -->
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <!--<title>Imágenes de Caldera</title>-->
-  <style>
-    body {
-      font-family: "roboto", Sans-Serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 10px 0;
-    }
-
-    #gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-      gap: 10px;
-      width: 100%;
-      max-width: 1200px;
-    }
-
-    #gallery img {
-      width: 100%;
-      height: auto;
-      border: 10px solid #ccc;
-      border-radius: 0px;
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    #gallery img:hover {
-      transform: scale(1.05);
-      border-color: #666;
-    }
-  </style>
+    <title>Caldera</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body>
-  <h1>Galería de Imágenes de la Caldera</h1>
-  <div id="gallery">
-    <!-- Lista de imágenes -->
+<body class="is-preload">
+    <div id="wrapper">
+        <!-- Sección de encabezado específica para Caldera -->
+        <section id="hero" style="text-align: center; padding: 100px 20px; background: white; color: black;">
+            <h1 style="font-size: 3em; margin-bottom: 20px;">Página de Caldera</h1>
+            <p style="font-size: 1.5em; margin-bottom: 40px;">Contenido relacionado con Caldera</p>
+            <a href="#gallery" style="text-decoration: none; padding: 10px 20px; background: #f56a6a; color: #fff; font-size: 1.2em; border-radius: 5px;">Explorar la galería</a>
+        </section>
+
+        <!-- Galería de imágenes -->
+        <section id="main">
+            <h1 style="text-align: center; margin: 20px 0;">Galería de Imágenes de la Caldera</h1>
+            <div id="gallery">
+                <!-- Lista de imágenes -->
     <img src="images/fulls/caldera/caldera (1).jpg" alt="">
     <img src="images/fulls/caldera/caldera (2).jpg" alt="">
     <img src="images/fulls/caldera/caldera (3).jpg" alt="">
@@ -149,3 +120,23 @@
   </div>
 </body>
 </html>
+
+<!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #wrapper {
+            width: 100%;
+        }
