@@ -98,6 +98,36 @@
             text-align: center;
             padding: 10px;
         }
+
+        /* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    #gallery {
+        column-count: 1; /* Solo una columna en móvil para buena legibilidad */
+        padding: 0 10px;
+    }
+
+    .vertical-grande img {
+        height: auto;        /* No forzamos altura en móviles */
+        object-fit: contain; /* Mostramos toda la imagen sin recortar */
+    }
+
+    .gallery-item::after {
+        font-size: 0.75em;   /* Texto más pequeño en móviles */
+        bottom: 4px;
+        right: 4px;
+        padding: 2px 6px;
+    }
+
+    #hero h1 {
+        font-size: 2em;      /* Título más pequeño en móvil */
+    }
+
+    #hero a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
     </style>
 </head>
 
