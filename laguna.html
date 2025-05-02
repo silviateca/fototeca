@@ -11,120 +11,122 @@
 
     <!-- CSS interno -->
     <style>
-        .gallery-item {
-    position: relative;
-}
-
-.gallery-item::after {
-    content: "👁️";                
-    position: absolute;         
-    bottom: 8px;                  
-    right: 8px;                    
-    font-size: 1.2em;               
-    opacity: 0;                     
-    transition: opacity 0.3s ease;  
-    z-index: 1;                     
-    background: none;         
-    padding: 0;                             
-}
-
-.gallery-item:hover::after {
-    opacity: 1;
-}
-
-        #gallery {
-            column-count: 3;
-            column-gap: 10px;
-            padding: 10px;
-            background-color: #2c2c2c;
-        }
-
-        .gallery-item {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 5px;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 0px;
-        }
-
-        /* Imagen destacada vertical */
-        .vertical-grande img {
-            height: 600px;
-            object-fit: cover;
-            width: 100%;
-        }
-
-        body {
-            font-family: raleway, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #wrapper {
-            width: 100%;
-        }
-
-        .imagen-con-texto {
-            position: relative;
-            display: inline-block;
-        }
-
-        .imagen-con-texto img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .texto-superpuesto {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 0.8em;
-            font-weight: bold;
-            text-shadow: 1px 1px 4px black;
-            text-align: center;
-            padding: 10px;
-        }
-
-        /* Estilos para pantallas pequeñas (móviles) */
-@media screen and (max-width: 768px) {
+    /* Galería estilo masonry con columnas */
     #gallery {
-        column-count: 1; /* Solo una columna en móvil para buena legibilidad */
-        padding: 0 10px;
+        column-count: 3;
+        column-gap: 10px;
+        padding: 10px;
+        background-color: #2c2c2c;
     }
 
-    .vertical-grande img {
-        height: auto;        /* No forzamos altura en móviles */
-        object-fit: contain; /* Mostramos toda la imagen sin recortar */
+    /* Cada imagen dentro de la galería */
+    .gallery-item {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 5px;
     }
 
+    /* Imagen base */
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0px;
+    }
+
+    /* Icono 👁️ que aparece al pasar el cursor */
     .gallery-item::after {
-        font-size: 0.75em;   /* Texto más pequeño en móviles */
-        bottom: 4px;
-        right: 4px;
-        padding: 2px 6px;
+        content: "👁️";
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        font-size: 1.2em;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+        background: none;
+        padding: 0;
     }
 
-    #hero h1 {
-        font-size: 2em;      /* Título más pequeño en móvil */
+    /* Mostrar el icono al hacer hover */
+    .gallery-item:hover::after {
+        opacity: 1;
     }
 
-    #hero a {
-        font-size: 1em;
-        padding: 8px 16px;
+    /* Imagen destacada en vertical */
+    .vertical-grande img {
+        height: 600px;
+        object-fit: cover;
+        width: 100%;
     }
-}
 
+    /* Estilos generales */
+    body {
+        font-family: raleway, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+
+    /* Opcional: superposición de texto sobre imágenes */
+    .imagen-con-texto {
+        position: relative;
+        display: inline-block;
+    }
+
+    .imagen-con-texto img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-superpuesto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Responsive para pantallas pequeñas */
+    @media screen and (max-width: 768px) {
+        #gallery {
+            column-count: 1;
+            padding: 0 10px;
+        }
+
+        .vertical-grande img {
+            height: auto;
+            object-fit: contain;
+        }
+
+        .gallery-item::after {
+            font-size: 1em;
+            bottom: 4px;
+            right: 4px;
+        }
+
+        #hero h1 {
+            font-size: 2em;
+        }
+
+        #hero a {
+            font-size: 1em;
+            padding: 8px 16px;
+        }
+    }
     </style>
 </head>
 
